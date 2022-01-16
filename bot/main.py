@@ -1,9 +1,9 @@
 import discord 
 import os
 from datetime import datetime
+from discord.ext import commands
 
-client = discord.Client()
-my_secret = os.environ['TOKEN']
+client = commands.Bot(command_prefix = "!")
 
 list_of_suffix = {1: 'st', 2: 'nd', 3: 'rd'}
 
@@ -49,5 +49,4 @@ async def on_message(message):
     elif 'sammus' in message.content:
       await message.channel.send('Sorry, I do not know how to respond to that.')
 
-
-client.run(os.getenv('TOKEN'))
+client.run('OTMwMTUzMTU5NDI5NTk1MTk3.Ydxuog.E5w59HWWJuytzTSPt-bu9SFFqWU')
