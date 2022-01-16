@@ -4,6 +4,7 @@ from datetime import datetime
 from discord.ext import commands
 
 client = commands.Bot(command_prefix = "!")
+TOKEN - os.getenv("DISCROD_TOKEN")
 
 list_of_suffix = {1: 'st', 2: 'nd', 3: 'rd'}
 
@@ -49,5 +50,4 @@ async def on_message(message):
     elif 'sammus' in message.content:
       await message.channel.send('Sorry, I do not know how to respond to that.')
 
-my_token = os.environ['TOKEN']
-client.run(my_token)
+client.run(TOKEN)
