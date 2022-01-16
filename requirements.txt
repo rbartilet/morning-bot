@@ -5,6 +5,7 @@ typing-extensions==4.0.1
 yarl==1.7.2
 click==8.0.3
 discord.py==1.7.3
+discord==1.7.3
 jinja2==3.0.3
 werkzeug==2.0.2
 flask==2.0.2
