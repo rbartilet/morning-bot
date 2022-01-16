@@ -4,7 +4,7 @@ from datetime import datetime
 from discord.ext import commands
 
 client = commands.Bot(command_prefix = "!")
-TOKEN - os.getenv("DISCROD_TOKEN")
+TOKEN - os.getenv("DISCORD_TOKEN")
 
 list_of_suffix = {1: 'st', 2: 'nd', 3: 'rd'}
 
