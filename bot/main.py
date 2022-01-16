@@ -50,4 +50,9 @@ async def on_message(message):
     elif 'sammus' in message.content:
       await message.channel.send('Sorry, I do not know how to respond to that.')
 
-client.run(TOKEN)
+@client.command()
+async def ping(ctx):
+    await ctx.send("pong")
+    
+if __name__ = "__main__":    
+    client.run(TOKEN)
