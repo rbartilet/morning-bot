@@ -49,5 +49,5 @@ async def on_message(message):
     elif 'sammus' in message.content:
       await message.channel.send('Sorry, I do not know how to respond to that.')
 
-my_secret = os.environ['TOKEN']
-client.run(my_secret)
+my_token = os.environ['TOKEN']
+client.run(my_token)
